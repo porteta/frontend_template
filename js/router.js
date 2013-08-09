@@ -34,8 +34,6 @@ define([
 			homeView.render();
 		});
 
-
-
 		Backbone.history.start();
 	}
 
