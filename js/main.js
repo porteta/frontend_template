@@ -2,13 +2,25 @@ require.config({
 	paths: {
 		jquery: '../components/jquery/jquery.min',
 		underscore: '../components/underscore/underscore-min',
-		backbone: '../components/backbone/backbone-min',
 		handlebars: '../components/handlebars/handlebars',
-		text: '../components/text/text'
+		backbone: '../components/backbone/backbone-min',
+		text: '../components/text/text',
+		templates: '../templates',
+		kinetic: '../components/kinetic/kinetic.min',
+		slideshow: 'modules/slideshow'
+	},
+	shim: {
+	    underscore: {
+	      exports: '_'
+	    },
+	    backbone: {
+	      deps: ["underscore", "jquery"],
+	      exports: "Backbone"
+	    }
 	}
 });
 
-require(['app',], function(App){
+require(['app'], function(App){
 	App.initialize();
 });
 
