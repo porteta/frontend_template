@@ -13,7 +13,6 @@ define([
 		events: {
 			"click": "nextSlide"
 		},
-
 		render: function(){	
 			this.$el.html(liveTemplate);
 			this.afterRender();

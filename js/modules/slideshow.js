@@ -52,8 +52,8 @@ define([
 		image2.src =slides[oldImage];
 		stagingCanvas.width = canvas.width;
 		stagingCanvas.height = canvas.height;
-		offscreenCanvas.width = 1000;
-		offscreenCanvas.height = 1000;
+		offscreenCanvas.width = 3000;
+		offscreenCanvas.height = 3000;
 		numSlides = slides.length;
 		image.onload = function(e){
 			 
